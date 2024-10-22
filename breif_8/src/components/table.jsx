@@ -1,5 +1,4 @@
 import React from 'react';
-import { Eye, Trash2 } from 'lucide-react';
 
 const UserTable = ({ data, onDelete, onView }) => {
   return (
@@ -25,10 +24,8 @@ const UserTable = ({ data, onDelete, onView }) => {
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                 <button onClick={() => onView(user)} className="text-indigo-600 hover:text-indigo-900 mr-4">
-                  <Eye size={18} />
                 </button>
                 <button onClick={() => onDelete(user.id)} className="text-red-600 hover:text-red-900">
-                  <Trash2 size={18} />
                 </button>
               </td>
             </tr>
